@@ -33,6 +33,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Sompoon/OneDrive - Aalborg Universitet/6th sem/AI/Python Projects/MinerSweeperMED6AIP&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -40,6 +41,11 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Sompoon\OneDrive - Aalborg Universitet\6th sem\AI\Python Projects\MinerSweeperMED6AIP" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="MinerSweeperMED6AIP" />
@@ -79,7 +85,8 @@
       <updated>1678445308452</updated>
       <workItem from="1678445352731" duration="101000" />
       <workItem from="1678445477738" duration="1903000" />
-      <workItem from="1678447963943" duration="991000" />
+      <workItem from="1678447963943" duration="7570000" />
+      <workItem from="1680247012805" duration="4512000" />
     </task>
     <servers />
   </component>
