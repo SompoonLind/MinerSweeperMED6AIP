@@ -1,9 +1,9 @@
-import random, numpy
+import random
+from AStar import A_star_search
 
-eight_tile = [2, 1, 3, 0, 8, 4, 6, 7, 5]
+initial_state = [2, 1, 3, 0, 8, 4, 6, 7, 5]
 
 def genetic_algo():
-    initial_state = eight_tile
     return initial_state
 
 
@@ -17,4 +17,5 @@ def main():
 
 
 if __name__ == '__main__':
+    A_star_search(initial_state)
     main()

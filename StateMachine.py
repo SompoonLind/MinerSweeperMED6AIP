@@ -8,7 +8,6 @@ class Statemachine
             return #moveblankright
 
     def state_two(self):
-
         if child <= 0.32:
             return #moveblankdown
         elif 0.33 >= child <= 0.65:
