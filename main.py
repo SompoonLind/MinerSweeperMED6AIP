@@ -19,3 +19,4 @@ def main():
 if __name__ == '__main__':
     A_star_search(initial_state)
     main()
+    print(random.random())
