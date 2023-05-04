@@ -26,24 +26,38 @@ import random
 class Individual:
     def __init__(self, chromosome):
         self.chromosome = chromosome  # state of the chessboard i.e., some configuration of 8 queens
-        self.fitness = self.fitness(chromosome)  # fitness equal to the number of non-attacking pairs of queens
+        self.board = board
+        self.fitness = self.fitness(chromosome)# fitness equal to the number of non-attacking pairs of queens
+        self.initial_fitness = initial_fitness
 
     @staticmethod
-    def fitness(chromosome):
+    def fitness(chromosome, board):
         """O(n^2): Determines the fitness of an individual, defined as max_fitness minus the number of pairs of attacking queens.
             For example, the max_fitness is 28 non-attacking pairs of queens, so for an individual with 20 attacking pairs of queens,
             its fitness would be a rather low score of 28 – 20 = 8."""
-        num_attacking_pairs = 0
         max_fitness = int(len(chromosome) * ((len(chromosome) - 1) / 2))
         for i in range(len(chromosome)):
             for j in range(i + 1, len(chromosome)):
                 if chromosome[i] == chromosome[j]:  # horizontal
-                    num_attacking_pairs += 1
+                    board += 1
                 if (chromosome[i] + i) == (chromosome[j] + j):  # negative diagonal
-                    num_attacking_pairs += 1
+                    board.num_matching_tiles += 1
                 if (chromosome[i] - i) == (chromosome[j] - j):  # positive diagonal
-                    num_attacking_pairs += 1
-        return max_fitness - num_attacking_pairs
+                    board.num_matching_tiles += 1
+        return max_fitness - board.num_matching_tiles
+
+
+def board ():
+    board_state = []
+
+    return
+
+def initial_fitness(arr1, arr2):
+    num_matching_tiles = 0
+    for i, j in zip(arr1, arr2):
+        if i == j:
+            num_matching_tiles += 1
+    return num_matching_tiles
 
 
 def fitness_proportionate_selection(population) -> Individual:
@@ -132,12 +146,16 @@ def genetic_algorithm(population, max_fitness) -> (Individual, int):
 
 
 def main():
-    num_of_queens = 8
-    population_size = 100
-    max_fitness = int(num_of_queens * ((num_of_queens - 1) / 2))  # maximum fitness is 28 for 8 queens
-    population = random_population(num_of_queens, population_size)
-    individual, generation_num = genetic_algorithm(population, max_fitness)
-    print_most_fit(individual, generation_num)
+    #num_of_queens = 8
+    #population_size = 100
+    #max_fitness = int(num_of_queens * ((num_of_queens - 1) / 2))  # maximum fitness is 28 for 8 queens
+    #population = random_population(num_of_queens, population_size)
+    #individual, generation_num = genetic_algorithm(population, max_fitness)
+    #print_most_fit(individual, generation_num)
+    Initial_state = [1, 2, 3, 4, 5]
+    goal_state = [3, 2, 1, 4, 6]
+    num_matching_tiles = initial_fitness(Initial_state, goal_state)
+    print(f"The number of matching elements is: {num_matching_tiles}")
 
 
 if __name__ == '__main__':

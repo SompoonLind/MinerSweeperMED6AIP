@@ -33,17 +33,17 @@ class Individual:
         """O(n^2): Determines the fitness of an individual, defined as max_fitness minus the number of pairs of attacking queens.
             For example, the max_fitness is 28 non-attacking pairs of queens, so for an individual with 20 attacking pairs of queens,
             its fitness would be a rather low score of 28 – 20 = 8."""
-        num_attacking_pairs = 0
+        matching_tiles = 0
         max_fitness = int(len(chromosome) * ((len(chromosome) - 1) / 2))
         for i in range(len(chromosome)):
             for j in range(i + 1, len(chromosome)):
                 if chromosome[i] == chromosome[j]:  # horizontal
-                    num_attacking_pairs += 1
+                    matching_tiles += 1
                 if (chromosome[i] + i) == (chromosome[j] + j):  # negative diagonal
-                    num_attacking_pairs += 1
+                    matching_tiles += 1
                 if (chromosome[i] - i) == (chromosome[j] - j):  # positive diagonal
-                    num_attacking_pairs += 1
-        return max_fitness - num_attacking_pairs
+                    matching_tiles += 1
+        return max_fitness - matching_tiles
 
 
 def fitness_proportionate_selection(population) -> Individual:
