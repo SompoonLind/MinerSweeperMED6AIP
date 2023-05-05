@@ -5,10 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ea3790a9-2dac-4e04-a5e2-dfbdbe04b3b0" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/MinerSweeperMED6AIP.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/MinerSweeperMED6AIP.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Genetic_Algorithm.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ga_queens_ans.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AStar.py" beforeDir="false" afterPath="$PROJECT_DIR$/AStar.py" afterDir="false" />
     </list>
     <list id="70b376b1-ab39-498b-af7b-59ab76cc5c0c" name="Changes by madsw" comment="" />
     <option name="SHOW_DIALOG" value="false" />
